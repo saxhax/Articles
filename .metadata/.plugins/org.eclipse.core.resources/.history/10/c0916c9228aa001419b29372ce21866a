@@ -1,0 +1,49 @@
+package com.articles.frontend.web.util;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.articles.frontend.web.handler.Constants;
+import com.articles.frontend.web.handler.LanguageHandler;
+
+public class Util {
+	
+	public static String getLanguage(HttpServletRequest request) {
+		String language;
+		try {
+			language = request.getParameter("language");
+			if (language != null) {
+				for (String availableLanguage : LanguageHandler.languages) {
+					if (availableLanguage.equalsIgnoreCase(language)) {
+						return availableLanguage;
+					}
+				}
+				language = Constants.DEFAULT_LANGUAGE;
+			} else {
+				return Constants.DEFAULT_LANGUAGE;
+			}
+		} catch(Exception e) {
+			return Constants.DEFAULT_LANGUAGE;
+		} finally {
+			request.getSession().putValue("language", arg1);
+		}
+	}
+	
+	public static String getColor(HttpServletRequest request) {
+		try {
+			String color = request.getParameter("color");
+			if (color != null) {
+				for (String availableColor : LanguageHandler.colors) {
+					if (availableColor.equalsIgnoreCase(color)) {
+						return availableColor;
+					}
+				}
+				return Constants.DEFAULT_COLOR;
+			} else {
+				return Constants.DEFAULT_COLOR;
+			}
+		} catch(Exception e) {
+			return Constants.DEFAULT_COLOR;
+		}
+	}
+
+}

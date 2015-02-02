@@ -1,0 +1,11 @@
+package com.articles.frontend.web.util;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class Util {
+	
+	public String getLanguage(HttpServletRequest request) {
+		
+	}
+
+}

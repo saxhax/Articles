@@ -1,0 +1,12 @@
+package com.articles.frontend.web.handler;
+
+import java.util.Properties;
+
+public class LanguageHandler {
+
+	public LanguageHandler(){}
+	
+	public Properties getLanguage(String language) {
+		
+	}
+}

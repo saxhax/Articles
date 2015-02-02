@@ -1,0 +1,2 @@
+<jsp:include page="templates/template.jsp" />
+	<span>${head.title}</span>

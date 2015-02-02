@@ -1,0 +1,5 @@
+package com.articles.frontend.web.users.service.util;
+
+public class Util {
+
+}

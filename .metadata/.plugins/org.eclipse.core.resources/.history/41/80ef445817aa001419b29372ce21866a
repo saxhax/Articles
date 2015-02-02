@@ -1,0 +1,14 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page session="true"%>
+<body>
+	<div class="frame">
+		<div class="addition shadow"></div>
+		<div class="main shadow">
+			<jsp:include page="header.jsp" />
+			<jsp:include page="menu.jsp" />
+			<jsp:include page="main.jsp" />
+			<jsp:include page="footer.jsp" />
+		</div>
+		<div class="addition shadow"></div>
+	</div>
+</body>

@@ -1,0 +1,8 @@
+package com.articles.frontend.web.handler;
+
+public class Constants {
+	public static String INDEX = "pages/index";
+	public static String ERROR = "pages/error";
+	public static String DEFAULT_LANGUAGE = "en";
+	public static String DEFAULT_COLOR = "white";
+}

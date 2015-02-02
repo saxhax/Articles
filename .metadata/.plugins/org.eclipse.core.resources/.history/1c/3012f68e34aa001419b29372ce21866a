@@ -1,0 +1,22 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page session="true"%>
+<div>
+	<a href="<c:url value='/' />">${menu_site_name}</a>
+</div>
+<div>
+	<ul>
+		<li><a href="#">${menu_home}</a></li>
+		<li><a href="#">${menu_tab_one}</a>
+			<ul>
+				<li><a href="#">${menu_tab_one_1}</a></li>
+				<li><a href="#">${menu_tab_one_2}</a></li>
+				<li><a href="#">${menu_tab_one_3}</a></li>
+			</ul></li>
+		<li><a href="#">${menu_tab_two}</a></li>
+		<li><a href="#">${menu_tab_three}</a></li>
+	</ul>
+	<ul>
+		<li><a href="#">${menu_sign_up}</a></li>
+		<li><a href="#">${menu_logine}</a></li>
+	</ul>
+</div>

@@ -1,0 +1,14 @@
+package com.articles.frontend.web.handler;
+
+import java.util.Properties;
+
+import org.springframework.core.io.support.PropertiesLoaderUtils;
+
+public class LanguageHandler {
+
+	public LanguageHandler(){}
+	
+	public Properties getLanguage(String language) {
+		Properties properties = PropertiesLoaderUtils.loadAllProperties(language + ".properties");
+	}
+}

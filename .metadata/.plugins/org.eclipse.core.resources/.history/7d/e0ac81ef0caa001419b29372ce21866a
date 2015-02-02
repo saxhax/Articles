@@ -1,0 +1,30 @@
+package com.articles.frontend.web.handler;
+
+import java.util.List;
+import java.util.Map.Entry;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.springframework.core.io.support.PropertiesLoaderUtils;
+import org.springframework.web.servlet.ModelAndView;
+
+public class LanguageHandler {
+	
+	private static String LOCATION = "data/languages/";
+	public static String[] languages = {"en", "hr"};
+	
+	public LanguageHandler(){}
+	
+	public Properties getLanguage(String language) throws IOException {
+		Properties properties = PropertiesLoaderUtils.loadAllProperties(LOCATION + language + ".properties");
+		return properties;
+	}
+
+	public ModelAndView fillModel(String language) {
+		Properties properties = getLanguage(language);
+		ModelAndView modelAndView = new ModelAndView();
+		for (Entry<String> propertie : properties.entrySet()){
+			
+		}
+	}
+}

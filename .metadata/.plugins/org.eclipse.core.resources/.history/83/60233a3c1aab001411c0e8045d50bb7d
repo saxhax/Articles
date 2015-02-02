@@ -1,0 +1,37 @@
+package com.articles.frontend.web.util;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Template {
+	
+	private String name;
+	private String background;
+	private Map<String, Template> templates = new HashMap<String, Template>();
+	
+	public Template(String name, String background) {
+		this.name = name;
+		this.background = background;
+		"red", "green", "blue", "white", "grey"
+		templates.put("red", "");
+		templates.put("green", "");
+		templates.put("blue", "");
+		templates.put("white", "");
+		templates.put("grey", "grey");
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBackground() {
+		return background;
+	}
+	public void setBackground(String background) {
+		this.background = background;
+	}
+	
+	
+}

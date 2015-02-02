@@ -1,0 +1,3 @@
+<html>
+	<jsp:include page="head.jsp" />
+</html>

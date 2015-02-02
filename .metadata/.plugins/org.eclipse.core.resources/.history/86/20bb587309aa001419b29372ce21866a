@@ -1,0 +1,5 @@
+package com.articles.frontend.web.handler;
+
+public class LanguageHandler {
+
+}
