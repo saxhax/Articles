@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page session="true"%>
 <style>
@@ -7,6 +8,9 @@
 </style>
 <body class="body">
 	<div class="frame">
+		<div class="shadow margin cap">
+			<jsp:include page="cap.jsp" />
+		</div>
 		<div class="leftAddition">
 			<a href="?language=en"><img class="flag shadow" src="<c:url value='images/en.jpg'/>"></a>
 			<a href="?language=ba"><img class="flag shadow" src="<c:url value='images/ba.jpg' />"></a>
@@ -33,13 +37,13 @@
 			</div>
 		</div>
 		<div class="rightAddition">
-			<div class="shadow rightLogin margin">
+			<div class="shadow rightObject margin">
 			</div>
-			<div class="shadow rightLogin margin">
+			<div class="shadow rightObject margin">
 			</div>
-			<div class="shadow rightLogin margin">
+			<div class="shadow rightObject margin">
 			</div>
-			<div class="shadow rightLogin margin">
+			<div class="shadow rightObject margin">
 			</div>
 		</div>
 		<div class="shadow margin footer">

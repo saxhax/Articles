@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .frame {
@@ -11,6 +12,18 @@
 	margin-bottom: 20px;
 	min-height: 500px;
 	width: 1000px;
+}
+
+.cap {
+	top: 0px;
+	width: 1200px;
+	min-height: 30px;
+	max-height: 50px;
+	background: #124;
+	padding: 5px;
+	color: white;
+	text-align: center;
+	margin-left: -100px !important;
 }
 
 .leftAddition {
@@ -30,6 +43,7 @@
 	float: left;
 	min-height: 500px;
 	width: 195px;
+	overflow: visible;
 }
 
 .flag {
@@ -206,7 +220,6 @@ nav ul ul ul {
 	-webkit-box-shadow: 0 0 10px #55f;
 	-o-box-shadow: 0 0 10px #55f;
 	border: 1px solid #55f;
-	overflow: hidden;
 }
 
 .shadow:focus {
@@ -237,17 +250,23 @@ nav ul ul ul {
 	background: #124;
 }
 
-.rightLogin {
+.rightObject {
 	min-height: 200px;
 	background: #124;
+}
+
+.rightObject:HOVER{
+	width: 300px;
 }
 
 .footer {
 	float: left;
 	bottom: 0px;
-	width: 1000px;
+	width: 1200px;
 	min-height: 30px;
 	background: #124;
 	padding: 5px;
 	color: white;
+	text-align: center;
+	margin-left: -100px;
 }
