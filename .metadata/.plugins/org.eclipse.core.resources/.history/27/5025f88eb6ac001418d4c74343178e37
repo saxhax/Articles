@@ -1,0 +1,9 @@
+alert("Hello");
+
+function move() {
+	var element = document.getElementById("middleAdds");
+    setInterval(
+    		function(){ 
+    			
+    			}, 1000);
+}

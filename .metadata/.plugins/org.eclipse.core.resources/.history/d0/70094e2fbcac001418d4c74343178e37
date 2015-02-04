@@ -1,0 +1,305 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: cursive, Arial, Helvetica, sans-serif;
+}
+
+.frame {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	min-height: 500px;
+	width: 1200px;
+}
+
+.cap {
+	top: 0px;
+	width: 1200px;
+	min-height: 30px;
+	max-height: 50px;
+	background: #124;
+	padding: 5px;
+	color: white;
+	text-align: center;
+}
+
+.leftAddition {
+	float: left;
+	min-height: 500px;
+	width: 130px;
+}
+
+.ads {
+	float: right;
+	width: 30px;
+}
+
+.main {
+	float: left;
+	min-height: 500px;
+	width: 750px;
+	margin: 0px 10px 0px 10px;
+}
+
+.rightAddition {
+	float: left;
+	min-height: 500px;
+	width: 295px;
+}
+
+.flag {
+	float: left;
+	width: 30px;
+	height: 20px;
+	margin-bottom: 10px;
+	padding: 0px !important;
+}
+
+.margin {
+	margin: 0px 0px 10px 0px;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	background: #124;
+	height: 200px;
+	padding: 0px;
+}
+
+.menu {
+	width: 100%;
+	background: #124;
+	color: #789;
+	z-index: 10;
+	height: 52px;
+	overflow: visible !important;
+}
+
+nav ul {
+	background: #124;
+	padding: 0 20px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+	border-radius: 8px;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:hover {
+	background: #000;
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+nav ul li:hover ul {
+	background: #126;
+}
+
+nav ul li:hover a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a {
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+}
+
+nav ul ul {
+	display: none;
+	background: #126;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+
+nav ul ul li {
+	float: none;
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul ul li a:hover {
+	background: #128;
+	text-decoration: none;
+}
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.menuLogin {
+	float: right !important;
+}
+
+.red {
+	background: #f77;
+}
+
+.blue {
+	background: #77f;
+}
+
+.white {
+	background: white;
+}
+
+.grey {
+	background: grey;
+}
+
+.green {
+	background: #7f7;
+}
+
+.login {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+	height: 170px;
+	width: 280px;
+}
+
+.login {
+	padding: 10px !important;
+}
+
+.login form table td {
+	padding: 5px;
+}
+
+.button {
+	background: #abc;
+	color: #123;
+	padding: 5px 15px 5px 15px !important;
+	background-color: #eed;
+	float: right;
+}
+
+.button:hover {
+	color: #229;
+	font-weight: 500;
+}
+
+.shadow {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	border: solid 1px #555;
+	border-radius: 2px;
+}
+
+.shadow:hover {
+	border-radius: 8px;
+	box-shadow: 0 0 10px #55f;
+	-moz-box-shadow: 0 0 10px #55f;
+	-webkit-box-shadow: 0 0 10px #55f;
+	-o-box-shadow: 0 0 10px #55f;
+	border: 1px solid #55f;
+}
+
+.shadow:focus {
+	border-radius: 2px !important;
+}
+
+.simpleInfo {
+	text-align: center;
+	font-size: 13px;
+	color: black;
+	text-decoration: blink;
+	padding: 8px;
+}
+
+.background {
+	background: -webkit-linear-gradient(left top, #eee, #9ab);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #eee, #9ab);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #eee, #9ab);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #eee, #9ab);
+	/* Standard syntax (must be last) */
+}
+
+.center {
+	min-height: 300px;
+	background: #124;
+}
+
+.rightObject {
+	float: left;
+	min-height: 200px;
+	background: #124;
+	width: 190px
+}
+
+.rightObject:HOVER{
+	width: 300px;
+}
+
+.middle {
+	width: 1200px;
+	min-height: 210px;
+	padding: 5px;
+}
+
+.middleObject {
+	float: left;
+	min-height: 200px;
+	background: #124;
+	width: 240px;
+	margin-right: 10px;
+}
+
+.middleObjectBig {
+	float: left;
+	min-height: 200px;
+	background: #124;
+	width: 240px;
+	margin-right: 10px;
+}
+
+.footer {
+	float: left;
+	width: 1200px;
+	min-height: 500px;
+	background: #124;
+	padding: 5px;
+}
+
+.footerLine {
+	float: left;
+	width: 1200px;
+	min-height: 30px;
+	background: #124;
+	padding: 5px;
+	color: white;
+	text-align: center;
+}

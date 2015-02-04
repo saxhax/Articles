@@ -1,0 +1,8 @@
+function setWidth(width) {
+	var element = document.getElementById("middleAdds");
+	element.getElementById("middle1").style.width=200 + 'px';
+	element.getElementById("middle2").style.width=200 + 'px';
+	element.getElementById("middle3").style.width=200 + 'px';
+	element.getElementById("middle4").style.width=200 + 'px';
+	element.getElementById(width).style.width=400 + 'px';
+}

@@ -1,0 +1,12 @@
+
+var element = document.getElementById("middleAdds");
+var i = 100;
+setInterval(
+		function(){ 
+			element.style.marginLeft = i+ "px";
+			i = i - 240;
+			}, 1000);
+
+function move() {
+	
+}

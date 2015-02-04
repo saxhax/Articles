@@ -11,7 +11,7 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 	min-height: 500px;
-	width: 1000px;
+	width: 1200px;
 }
 
 .cap {
@@ -23,27 +23,42 @@
 	padding: 5px;
 	color: white;
 	text-align: center;
-	margin-left: -100px !important;
 }
 
 .leftAddition {
 	float: left;
-	min-height: 500px;
-	width: 30px;
+	height: 330px;
+	width: 130px;
 }
 
-.main {
+.ads {
+	float: right;
+	width: 30px;
+	height: 330px;
+}
+
+.top {
 	float: left;
-	min-height: 500px;
+	height: 330px;
 	width: 750px;
 	margin: 0px 10px 0px 10px;
 }
 
 .rightAddition {
 	float: left;
-	min-height: 500px;
-	width: 195px;
-	overflow: visible;
+	min-height: 330px;
+	width: 295px;
+}
+
+.rightObject {
+	float: left;
+	height: 320px;
+	background: #124;
+	width: 190px
+}
+
+.rightObject:HOVER{
+	width: 300px;
 }
 
 .flag {
@@ -58,12 +73,28 @@
 	margin: 0px 0px 10px 0px;
 }
 
+.width {
+	width: 1200;
+}
+
 .header {
 	position: relative;
 	width: 100%;
 	background: #124;
-	height: 200px;
+	height: 258px;
 	padding: 0px;
+}
+
+.main {
+	float: left;
+	width: 1200px;
+}
+
+.center {
+	float: left;
+	width: 1200px;
+	height: 400px;
+	background: #124;
 }
 
 .menu {
@@ -245,28 +276,41 @@ nav ul ul ul {
 	/* Standard syntax (must be last) */
 }
 
-.center {
-	min-height: 300px;
-	background: #124;
+.middle {
+	float: left;
+	width: 1250px;
 }
 
-.rightObject {
-	min-height: 200px;
+.middleObject {
+	float: left;
+	height: 200px;
 	background: #124;
+	width: 293px;
+	margin-right: 10px;
 }
 
-.rightObject:HOVER{
-	width: 300px;
+.middleObjectBig {
+	float: left;
+	height: 200px;
+	background: #124;
+	width: 596px;
+	margin-right: 10px;
 }
 
 .footer {
 	float: left;
-	bottom: 0px;
+	width: 1200px;
+	min-height: 300px;
+	background: #124;
+	padding: 5px;
+}
+
+.footerLine {
+	float: left;
 	width: 1200px;
 	min-height: 30px;
 	background: #124;
 	padding: 5px;
 	color: white;
 	text-align: center;
-	margin-left: -100px;
 }

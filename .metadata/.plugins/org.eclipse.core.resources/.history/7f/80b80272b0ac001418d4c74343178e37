@@ -1,0 +1,7 @@
+function setWidth(width) {
+	document.getElementById(width).style.width=400;
+	document.getElementById(width).style.width=400;
+	document.getElementById(width).style.width=400;
+	document.getElementById(width).style.width=400;
+	document.getElementById(width).style.width=400;
+}

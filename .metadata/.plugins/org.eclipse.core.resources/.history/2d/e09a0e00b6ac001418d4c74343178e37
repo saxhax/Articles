@@ -1,0 +1,7 @@
+alert("Hello");
+
+function move() {
+    setInterval(
+    		function(){ 
+    			}, 5000);
+}

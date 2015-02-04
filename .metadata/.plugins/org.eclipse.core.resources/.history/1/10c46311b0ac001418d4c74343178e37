@@ -1,0 +1,15 @@
+<div class="shadow middleObject">
+	<div id="middle1" onmouseover="setWidth('middle1')"></div>
+</div>
+
+<div class="shadow middleObject">
+	<div id="middle2" onmouseover="setWidth('middle1')"></div>
+</div>
+
+<div class="shadow middleObject">
+	<div id="middle3"></div>
+</div>
+
+<div class="shadow middleObject">
+	<div id="middle4"></div>
+</div>

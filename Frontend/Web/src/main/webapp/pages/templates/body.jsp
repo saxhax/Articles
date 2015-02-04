@@ -12,42 +12,36 @@
 			<jsp:include page="cap.jsp" />
 		</div>
 		<div class="leftAddition">
-			<a href="?language=en"><img class="flag shadow" src="<c:url value='images/en.jpg'/>"></a>
-			<a href="?language=ba"><img class="flag shadow" src="<c:url value='images/ba.jpg' />"></a>
-			<a href="?language=de"><img class="flag shadow" src="<c:url value='images/de.jpg' />"></a>
-			<a href="?language=hr"><img class="flag shadow" src="<c:url value='images/hr.jpg' />"></a>
-			<a href="?language=rs"><img class="flag shadow" src="<c:url value='images/rs.jpg' />"></a>
-			<div class="flag"></div>
-			<a href="?template=red" class="flag red shadow"></a>
-			<a href="?template=green" class="flag green shadow"></a>
-			<a href="?template=blue" class="flag blue shadow"></a>
-			<a href="?template=grey" class="flag grey shadow"></a>
-			<a href="?template=white" class="flag white shadow"></a>
-			
+			<jsp:include page="left.jsp" />
 		</div>
-		<div class="main">
-			<div class="shadow margin">
+		<div class="top">
+			<div class="shadow margin header">
 				<jsp:include page="header.jsp" />
 			</div>
 			<div class="margin menu">
 				<jsp:include page="menu.jsp" />
 			</div>
-			<div class="shadow margin center">
-				<jsp:include page="main.jsp" />
-			</div>
 		</div>
 		<div class="rightAddition">
 			<div class="shadow rightObject margin">
 			</div>
-			<div class="shadow rightObject margin">
+		</div>
+		<div class="main margin">
+			<div class="shadow center">
+				<jsp:include page="main.jsp" />
 			</div>
-			<div class="shadow rightObject margin">
-			</div>
-			<div class="shadow rightObject margin">
-			</div>
+		</div>
+		<div class="middle margin">
+			<jsp:include page="middle.jsp" />
+		</div>
+		<div class="middle margin">
+			<jsp:include page="middle2.jsp" />
 		</div>
 		<div class="shadow margin footer">
 			<jsp:include page="footer.jsp" />
+		</div>
+		<div class="shadow margin footerLine">
+			<jsp:include page="footerLine.jsp" />
 		</div>
 	</div>
 </body>

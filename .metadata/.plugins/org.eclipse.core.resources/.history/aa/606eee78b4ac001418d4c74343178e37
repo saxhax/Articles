@@ -1,0 +1,48 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page session="true"%>
+<style>
+.body {
+	background: ${template.background};
+}
+</style>
+<body class="body">
+	<div class="frame">
+		<div class="shadow margin cap">
+			<jsp:include page="cap.jsp" />
+		</div>
+		<div class="leftAddition">
+			<jsp:include page="left.jsp" />
+		</div>
+		<div class="main">
+			<div class="shadow margin header">
+				<jsp:include page="header.jsp" />
+			</div>
+			<div class="margin menu">
+				<jsp:include page="menu.jsp" />
+			</div>
+			<div class="shadow margin center">
+				<jsp:include page="main.jsp" />
+			</div>
+		</div>
+		<div class="rightAddition">
+			<div class="shadow rightObject margin">
+			</div>
+			<div class="shadow rightObject margin">
+			</div>
+			<div class="shadow rightObject margin">
+			</div>
+			<div class="shadow rightObject margin">
+			</div>
+		</div>
+		<div id="middleAdds" class="margin middle">
+			<jsp:include page="middle.jsp" />
+		</div>
+		<div class="shadow margin footer">
+			<jsp:include page="footer.jsp" />
+		</div>
+		<div class="shadow margin footerLine">
+			<jsp:include page="footer.jsp" />
+		</div>
+	</div>
+</body>

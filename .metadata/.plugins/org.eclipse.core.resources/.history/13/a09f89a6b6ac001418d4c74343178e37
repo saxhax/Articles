@@ -1,0 +1,10 @@
+alert("Hello");
+
+function move() {
+	var element = document.getElementById("middleAdds");
+	var i = 100;
+    setInterval(
+    		function(){ 
+    			element.style.marginLeft = i+ "px";
+    			}, 1000);
+}
