@@ -81,6 +81,9 @@
 	position: relative;
 	width: 100%;
 	background: #124;
+	background-image: url("../images/logo.jpg");
+    background-size: 750px 258px;
+    background-repeat: no-repeat;
 	height: 258px;
 	padding: 0px;
 }

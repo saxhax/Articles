@@ -1,9 +1,0 @@
-alert("Hello");
-
-function move() {
-	var element = document.getElementById("")
-    setInterval(
-    		function(){ 
-    			
-    			}, 5000);
-}

@@ -1,5 +1,0 @@
-alert("Hello");
-
-function move() {
-    setInterval(function(){ alert("Hello"); }, 3000);
-}

@@ -1,3 +1,0 @@
-function setWidth(width) {
-	document.getElementById(width).style.width=400;
-}

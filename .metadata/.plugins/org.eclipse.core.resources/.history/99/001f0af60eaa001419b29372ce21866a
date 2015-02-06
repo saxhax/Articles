@@ -1,6 +1,0 @@
-<html>
-	<jsp:include page="header.jsp" />
-	<jsp:include page="menu.jsp" />
-	<jsp:include page="main.jsp?action=<%=action%>" />
-	<jsp:include page="footer.jsp" />
-</html>

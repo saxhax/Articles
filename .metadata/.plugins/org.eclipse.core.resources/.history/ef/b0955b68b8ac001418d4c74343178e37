@@ -1,9 +1,0 @@
-
-var element = document.getElementById("middleAdds");
-var i = 100;
-setInterval(move(), 1000);
-
-function move() { 
-	element.style.marginLeft = i+ "px";
-	i = i - 240;
-}

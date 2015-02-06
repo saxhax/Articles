@@ -1,5 +1,0 @@
-function setWidth(width) {
-	document.getElementById(width) {
-		
-	}
-}
