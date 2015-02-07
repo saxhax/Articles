@@ -23,8 +23,7 @@
 			</div>
 		</div>
 		<div class="rightAddition">
-			<div class="shadow rightObject margin">
-			</div>
+			<jsp:include page="right.jsp" />
 		</div>
 		<div class="main margin">
 			<div class="shadow center">

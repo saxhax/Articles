@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	color: white;
 	font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
@@ -28,20 +29,14 @@
 .leftAddition {
 	float: left;
 	height: 330px;
-	width: 130px;
-}
-
-.ads {
-	float: right;
-	width: 30px;
-	height: 330px;
+	width: 140px;
 }
 
 .top {
 	float: left;
 	height: 330px;
 	width: 750px;
-	margin: 0px 10px 0px 10px;
+	margin: 0px 10px 0px 0px;
 }
 
 .rightAddition {
@@ -52,20 +47,41 @@
 
 .rightObject {
 	float: left;
-	height: 320px;
+	height: 155px;
 	background: #124;
-	width: 190px
+	width: 300px;
+	overflow: hidden;
 }
 
-.rightObject:HOVER{
-	width: 300px;
+.cart {
+	background-image: url("../images/cart.jpg");
+    background-size: 300px 155px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 155px;
+}
+
+.cart table {
+	margin: 10px 5px 0px 0px;
+	float: right;
+}
+
+.cart table tr {
+	margin-bottom: 5px;
+}
+
+.cart table td {
+	padding-right: 5px;
+    color: black;
+    padding: 5px;
 }
 
 .flag {
 	float: left;
-	width: 30px;
+	width: 35px;
 	height: 20px;
 	margin-bottom: 10px;
+	margin-right: 10px;
 	padding: 0px !important;
 }
 
@@ -188,54 +204,95 @@ nav ul ul ul {
 	float: right !important;
 }
 
-.red {
+.red1 {
 	background: #f77;
 }
 
-.blue {
+.red2 {
+	background: #f99;
+}
+
+.red3 {
+	background: #fbb;
+}
+
+.blue1 {
 	background: #77f;
 }
 
-.white {
+.blue2 {
+	background: #99f;
+}
+
+.blue3 {
+	background: #bbf;
+}
+
+.white1 {
 	background: white;
 }
 
-.grey {
+.white2 {
+	background: #ffa;
+}
+
+.white3 {
+	background: #faf;
+}
+
+.grey1 {
 	background: grey;
 }
 
-.green {
+.grey2 {
+	background: #999;
+}
+
+.grey3 {
+	background: #aaa;
+}
+
+.green1 {
 	background: #7f7;
 }
 
-.login {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 250px;
-	height: 170px;
-	width: 280px;
+.green2 {
+	background: #9f9;
+}
+
+.green3 {
+	background: #bfb;
 }
 
 .login {
-	padding: 10px !important;
+	text-align: center;
+	padding: 8px;
 }
 
-.login form table td {
-	padding: 5px;
+.login tr {
+	margin-bottom: 5px;
+}
+
+.login td {
+	padding-right: 5px;
+}
+
+.login td input {
+	padding-left: 5px;
+	color: black;
+	margin-top: 5px;
 }
 
 .button {
-	background: #abc;
-	color: #123;
+	color: black;
 	padding: 5px 15px 5px 15px !important;
 	background-color: #eed;
 	float: right;
 }
 
 .button:hover {
-	color: #229;
-	font-weight: 500;
+	color: #124;
+	font-weight: 600;
 }
 
 .shadow {
@@ -258,14 +315,6 @@ nav ul ul ul {
 
 .shadow:focus {
 	border-radius: 2px !important;
-}
-
-.simpleInfo {
-	text-align: center;
-	font-size: 13px;
-	color: black;
-	text-decoration: blink;
-	padding: 8px;
 }
 
 .background {

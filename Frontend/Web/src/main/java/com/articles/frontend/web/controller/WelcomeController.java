@@ -42,7 +42,6 @@ public class WelcomeController {
 			model.setViewName(Constants.ERROR);
 		}
 		return model;
-
 	}
 
 	@RequestMapping(value = "/admin**", method = RequestMethod.GET)
@@ -58,21 +57,30 @@ public class WelcomeController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-			@RequestParam(value = "logout", required = false) String logout, HttpServletRequest request) {
+	public ModelAndView login(
+			@RequestParam(value = "error", required = false) String error,
+			@RequestParam(value = "logout", required = false) String logout, 
+			HttpServletRequest request) {
 
-		ModelAndView model = new ModelAndView();
-		if (error != null) {
-			model.addObject("error", getErrorMessage(request, "SPRING_SECURITY_LAST_EXCEPTION"));
+		String language = Util.getLanguage(request);
+		Template template = Util.getTemplate(request);
+		ModelAndView model;
+		try {
+			model = new LanguageHandler().fillModel(language);
+			model.addObject("language", language);
+			model.addObject("template", template);
+			model.setViewName(Constants.INDEX);
+		} catch (IOException e) {
+			model = new ModelAndView();
+			model.setViewName(Constants.ERROR);
 		}
-
 		if (logout != null) {
 			model.addObject("msg", "You've been logged out successfully.");
 		}
-		model.setViewName("login");
-
+		if (error != null) {
+			model.addObject("error", getErrorMessage(request, "SPRING_SECURITY_LAST_EXCEPTION"));
+		}
 		return model;
-
 	}
 
 	// customize the error message
@@ -108,7 +116,7 @@ public class WelcomeController {
 
 		}
 
-		model.setViewName("403");
+		model.setViewName("pages/403");
 		return model;
 
 	}

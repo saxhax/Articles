@@ -13,9 +13,10 @@
         <!-- access denied page -->
         <access-denied-handler error-page="/403"/>
         <form-login login-page="/login" default-target-url="/welcome"
-                    authentication-failure-url="/login?error" username-parameter="username"
+                    authentication-failure-url="/welcome?error" 
+                    username-parameter="username"
                     password-parameter="password"/>
-        <logout logout-success-url="/login?logout"/>
+        <logout logout-success-url="/welcome?logout"/>
         <!-- enable csrf protection -->
         <csrf/>
     </http>
@@ -24,7 +25,7 @@
                 class="com.articles.frontend.web.users.service.CustomUserDetailsService">
         <beans:property name="usersByUsernameQuery" value="select * from users where username = ?"/>
         <beans:property name="authoritiesByUsernameQuery"
-                        value="select username, role from user_roles where username =?"/>
+                        value="select username, role from user_roles where username = ?"/>
         <beans:property name="dataSource" ref="dataSource"/>
     </beans:bean>
 
