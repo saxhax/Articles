@@ -3,6 +3,26 @@
 <%@page session="true"%>
 <div class="shadow rightObject margin">
 	<div class="login">
+		<c:url value="/j_spring_security_logout" var="logoutUrl" />
+		<% if (session.getAttribute("username") != null) {%>
+				<div>User: <%=session.getAttribute("username").toString() %></div>
+				<form action="${logoutUrl}" method="post" id="logoutForm">
+				  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+				</form>
+ 
+				<script>
+					function formSubmit() {
+						document.getElementById("logoutForm").submit();
+					}
+				</script>
+			 
+				<c:if test="${pageContext.request.userPrincipal.name != null}">
+					<h2>
+						Welcome : ${pageContext.request.userPrincipal.name} | <a
+							href="javascript:formSubmit()"> Logout</a>
+					</h2>
+				</c:if>
+		<%} else {%>
 		<form name='loginForm'
 			action="<c:url value='j_spring_security_check' />" method='POST'>
 			<div>
@@ -31,6 +51,7 @@
 				value="${_csrf.token}" />
 
 		</form>
+		<%}%>
 	</div>
 </div>
 <div class="shadow rightObject margin">
